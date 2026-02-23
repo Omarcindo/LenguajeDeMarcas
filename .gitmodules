@@ -1,0 +1,3 @@
+[submodule "profesor"]
+	path = profesor
+	url = https://github.com/morgadodesarrollador/LM-25-26.git
