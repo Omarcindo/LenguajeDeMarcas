@@ -1,0 +1,223 @@
+header {
+    padding-top: 5px;
+    padding-bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    order: 1;
+    width: auto;
+    padding-left: 20px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main figure.logo img {
+    height: 75px;
+    width: auto;
+}
+
+.main .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main h1 {
+    font-size: 24px;
+    margin: 0;
+    line-height: 1;
+    white-space: nowrap;
+    color: black;
+}
+
+.main .subtitulo {
+    font-size: 14px;
+    margin-top: 3px;
+    font-style: italic;
+    color: rgb(93,88,107);
+}
+
+.top {
+    order: 2;
+    width: auto;
+    background: transparent;
+    border: none;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.top .sociales {
+    order: 1;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.top .sociales a {
+    color: rgb(92,92,102);
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.top .sociales a:hover {
+    color: black;
+}
+
+.top .contacto {
+    order: 2;
+    display: block;
+    margin: 0;
+}
+
+.top .llama {
+    display: none;
+}
+
+.top .contacto span {
+    display: none;
+}
+
+.top .login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.top .login i {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.top .login a {
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+    text-decoration: none;
+}
+
+.bottom {
+    order: 3;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.bottom address {
+    display: none;
+}
+
+.menusito {
+    width: auto;
+    flex-direction: row;
+    border: none;
+    gap: 80px;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.menusito a {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: rgb(93, 75, 142);
+    text-decoration: none;
+    gap: 5px;
+    transition: transform 0.2s;
+}
+
+.menusito a:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.menusito .icono-movil {
+    display: none;
+}
+
+.menusito .icono-pc {
+    display: block;
+    font-size: 26px;
+    margin-bottom: 2px;
+    color: rgb(93, 75, 142);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#uwu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.ejemplo {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    max-width: none;
+    padding: 0;
+    border: none;
+}
+
+.ejemplo .presio {
+    order: -1;
+    background-color: rgb(174, 181, 186);
+    color: black;
+    padding: 8px 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.ejemplo figure.casita {
+    order: 0;
+    height: 250px;
+    margin: 0;
+}
+
+.ejemplo figure.casita img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ejemplo h3 {
+    order: 1;
+    padding: 15px 10px;
+    font-size: 16px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.ejemplo .medidas {
+    order: 2;
+    background-color: rgb(233, 233, 233);
+    border-top: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

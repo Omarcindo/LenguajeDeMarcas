@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif; 
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(229,229,255);
+}
+
+.top {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top .sociales {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.top .sociales a {
+    color: rgb(92,92,102);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.top .contacto {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+.top .llama a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.top .login a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.top .llama span {
+    color: blue;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.main figure.logo {
+    flex-basis: 30%;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.main figure.logo img {
+    height: 80px;
+    width: auto;
+}
+
+.main .titulo {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main h1 {
+    font-size: 25px;
+}
+
+.main .subtitulo {
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(93,88,107);
+    font-family: serif;
+}
+
+.bottom {
+    padding: 10px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;     
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.bottom address {
+    background-color: rgb(206,206,229);
+    padding: 15px;
+    margin: 5px; 
+    text-align: center;
+    font-style: normal;
+    font-size: 18px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom address a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.bottom .rayita{
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: inherit;
+    color: black;
+    margin-left: 5px;
+}
+
+.menusito {
+    flex-basis: 100%; 
+    width: 100%; 
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menusito a {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 12px 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menusito .icono-movil {
+    display: inline-block; 
+}
+
+.menusito .icono-pc {
+    display: none; 
+}
+
+.ejemplo {
+    border: 1px solid gainsboro; 
+    display: flex;
+    flex-direction: column; 
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+.ejemplo figure.casita {
+    width: 100%;
+    height: 200px; 
+}
+
+.ejemplo figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ejemplo h3 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.presio {
+    background-color: rgb(175,181,187); 
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.medidas {
+    padding: 12px; 
+    display: flex;
+    justify-content: center; 
+    gap: 25px; 
+    border-top: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.medidas span {
+    display: flex;
+    align-items: center;
+    gap: 6px; 
+    font-weight: 600;
+}
+
+

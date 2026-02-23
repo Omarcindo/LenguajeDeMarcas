@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nombre": "Apartamento Venta Los Delfines, Mojacar",
+    "precio": 59000,
+    "precioOriginal": 65000,
+    "descuento": 9,
+    "imagen": "imagenes/casa1.png",
+    "valoracion": 4.8,
+    "opiniones": 12,
+    "caracteristicas": {
+      "ref": "3511",
+      "metros": "67m2",
+      "habitaciones": 2,
+      "banos": 3
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Apartamento Venta Los Collados, Mojacar",
+    "precio": 125000,
+    "precioOriginal": 135000,
+    "descuento": 7,
+    "imagen": "imagenes/casa2.png",
+    "valoracion": 4.5,
+    "opiniones": 8,
+    "caracteristicas": {
+      "ref": "3522",
+      "metros": "85m2",
+      "habitaciones": 3,
+      "banos": 2
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Apartamento Venta Servimarina, Mojacar",
+    "precio": 95000,
+    "precioOriginal": 95000,
+    "descuento": 0,
+    "imagen": "imagenes/casa3.png",
+    "valoracion": 4.9,
+    "opiniones": 24,
+    "caracteristicas": {
+      "ref": "3533",
+      "metros": "70m2",
+      "habitaciones": 2,
+      "banos": 1
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Apartamento Venta Los Azules, Mojacar",
+    "precio": 89000,
+    "precioOriginal": 105000,
+    "descuento": 15,
+    "imagen": "imagenes/casa4.png",
+    "valoracion": 4.7,
+    "opiniones": 5,
+    "caracteristicas": {
+      "ref": "3544",
+      "metros": "90m2",
+      "habitaciones": 3,
+      "banos": 2
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Atico Venta Vista Mar, Mojacar",
+    "precio": 150000,
+    "precioOriginal": 160000,
+    "descuento": 6,
+    "imagen": "imagenes/casa5.png",
+    "valoracion": 5.0,
+    "opiniones": 3,
+    "caracteristicas": {
+      "ref": "3555",
+      "metros": "110m2",
+      "habitaciones": 4,
+      "banos": 2
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Duplex Venta El Palmeral, Mojacar",
+    "precio": 210000,
+    "precioOriginal": 210000,
+    "descuento": 0,
+    "imagen": "imagenes/casa6.png",
+    "valoracion": 4.6,
+    "opiniones": 18,
+    "caracteristicas": {
+      "ref": "3566",
+      "metros": "130m2",
+      "habitaciones": 3,
+      "banos": 3
+    }
+  }
+]

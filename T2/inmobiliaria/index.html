@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria</title>
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <section class="top">
+            <nav class="sociales">
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </nav>
+            
+            <div class="contacto">
+                <p class="llama">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <a href="#">629 76 03 03</a>
+                    <span>Te llamamos</span>
+                </p>
+                <p class="login">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    <a href="#">Login</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="main">
+            <figure class="logo">
+                <img src="imagenes/logo.png" alt="casita">
+            </figure>
+            <div class="titulo">
+                <h1>La Casa de tus sueños</h1>
+                <span class="subtitulo">Inmobiliaria la Laguna</span>
+            </div>
+        </section>
+
+        <section class="bottom">
+    
+            <address>
+                123 QuickSale Street<br>
+                Chicago, IL 60606
+            </address>
+
+            <address>
+                123-456-7890<br>
+                <a href="#">info@yoursite.com</a>
+            </address>
+            <span class="rayita">
+                <i class="fa-solid fa-bars toggle-menu"></i>
+            </span>
+            
+            <nav class="menusito">
+                <a href="#">
+                    Home 
+                    <i class="fa-solid fa-chevron-down icono-movil"></i>
+                    <i class="fa-solid fa-house icono-pc"></i>
+                </a>
+
+                <a href="#">
+                    Viviendas 
+                    <i class="fa-solid fa-chevron-down icono-movil"></i>
+                    <i class="fa-solid fa-building icono-pc"></i>
+                </a>
+
+                <a href="#">
+                    Noticias 
+                    <i class="fa-solid fa-chevron-down icono-movil"></i>
+                    <i class="fa-solid fa-newspaper icono-pc"></i>
+                </a>
+
+                <a href="#">
+                    Presupuesto 
+                    <i class="fa-solid fa-chevron-down icono-movil"></i>
+                    <i class="fa-solid fa-file-invoice-dollar icono-pc"></i>
+                </a>
+            </nav>
+
+        </section>
+    </header>
+    <main>
+        <h2>Viviendas en Mojacar</h2>
+        <section id="uwu">
+        </section>
+        
+    </main>
+
+</body>
+</html>
+
+<script>
+    fetch('data/casas.json') 
+        .then(response => response.json())
+        .then(viviendas => {
+            
+            const contenedor = document.getElementById('uwu');
+
+            viviendas.forEach(casa => {
+
+                const tarjeta = document.createElement('article'); 
+                
+
+                tarjeta.classList.add('ejemplo'); 
+                tarjeta.innerHTML = `
+                    <figure class="casita">
+                        <img src="${casa.imagen}" alt="${casa.nombre}">
+                    </figure>
+
+                    <h3>${casa.nombre}</h3>
+                        
+                    <p class="presio">
+                        <span class="ref">Ref: ${casa.caracteristicas.ref}</span>
+                        <span class="precio">${casa.precio} €</span>
+                    </p>
+
+                    <p class="medidas">
+                        <span><i class="fa-solid fa-house"></i> ${casa.caracteristicas.metros}</span>
+                        <span><i class="fa-solid fa-bath"></i> ${casa.caracteristicas.banos}</span>
+                        <span><i class="fa-solid fa-bed"></i> ${casa.caracteristicas.habitaciones}</span>
+                    </p>
+                `;
+
+                contenedor.appendChild(tarjeta);
+            })
+        })
+        .catch(error => console.error('Error cargando las viviendas:', error));
+</script>

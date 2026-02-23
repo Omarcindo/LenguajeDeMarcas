@@ -1,0 +1,11 @@
+header {
+    background-color: blue;
+    display: grid;
+    grid-template-areas: 
+        "logo titulo titulo registro"
+        "logo navppal oferta oferta";
+    grid-template-columns: 2fr 5fr 2fr 1fr;
+    grid-template-rows: 100px 100px ;
+    gap: 5px;
+    padding: 5px;
+}
