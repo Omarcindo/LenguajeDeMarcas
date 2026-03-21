@@ -1,0 +1,6 @@
+cd entrar a la carpeta de trabajo
+
+npm create vite@latest
+    seguir los pasos
+
+npm run dev
